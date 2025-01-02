@@ -12,7 +12,8 @@ class Shape:
         
         
 class Circle(Shape):
-    gravity = .001
+    gravity = .5
+    bounce_loss = .99
     
     def __init__(self, color, x, y, radius):
         super().__init__(color, x, y)
