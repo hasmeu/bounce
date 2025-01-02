@@ -1,0 +1,15 @@
+I want a 2d window that simulates a bouncy ball bouncing. 
+It will have gravity
+
+A ball has x, y, radius, direction, and speed.
+Velocity is both direction and speed
+
+Direction = 
+If the ball hits a wall, you get money
+IF the ball hits a wall it 
+You can drag and throw the ball 
+
+You can buy upgrades to reduce gravity, increase speed, buy more balls, 
+If ball is not at a high enough speed, there is no money made
+
+
