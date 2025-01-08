@@ -66,3 +66,6 @@ def borders(screen, screen_width, screen_height):
     pygame.draw.rect(screen, border_color, (0, screen_height - border_thickness, screen_width, border_thickness))
     pygame.draw.rect(screen, border_color, (0, 0, border_thickness, screen_height))
     pygame.draw.rect(screen, border_color, (screen_width - border_thickness, 0, border_thickness, screen_height))
+    
+
+#Create a window for money tracking

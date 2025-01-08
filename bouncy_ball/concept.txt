@@ -9,7 +9,7 @@ If the ball hits a wall, you get money
 IF the ball hits a wall it 
 You can drag and throw the ball 
 
-You can buy upgrades to reduce gravity, increase speed, buy more balls, 
+You can buy upgrades to reduce gravity, increase speed, buy more balls, buy new bouncing shapes, customize the border and back, change the shape of the borders
 If ball is not at a high enough speed, there is no money made
 
 

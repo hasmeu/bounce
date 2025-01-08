@@ -14,7 +14,7 @@ def simulation(screen, screen_width, screen_height, border_thickness, circle, mo
     #collision for bottom border 
     if (circle.y >= screen_height - border_thickness - circle.radius):
         circle.y = screen_height - border_thickness - circle.radius
-        circle.y_velocity = round(-circle.y_velocity * circle.bounce_loss, 2) # bounce with 80% of its energy. It will bounce back up but with less height
+        circle.y_velocity = -circle.y_velocity * circle.bounce_loss# bounce with 80% of its energy. It will bounce back up but with less height
         
     #collision for top border 
     if (circle.y <= border_thickness + circle.radius):
@@ -29,7 +29,7 @@ def simulation(screen, screen_width, screen_height, border_thickness, circle, mo
     #collision for right border 
     if (circle.x >= screen_width - border_thickness - circle.radius):
         circle.x = screen_width - border_thickness - circle.radius
-        circle.x_velocity = round(-circle.x_velocity * circle.bounce_loss, 2) 
+        circle.x_velocity = -circle.x_velocity * circle.bounce_loss
     #lastly put the updated position on screen for the new frame
     
     
@@ -43,13 +43,13 @@ def simulation(screen, screen_width, screen_height, border_thickness, circle, mo
     #if ball clicked. apply random velocity gain
     if (distance <= circle.radius):
         circle.x_velocity += random.uniform(-100, 100)
-        circle.y_velocity += random. uniform(-100, 100)
+        circle.y_velocity += random.uniform(-100, 100)
             
     
     
     #friction
-    circle.x_velocity *= .99
-    circle.y_velocity *= .99
+    circle.x_velocity *= .986
+    circle.y_velocity *= .986
     circle.draw(screen)
          
          
